@@ -74,6 +74,22 @@ const routes: Routes = [
     path: 'home-template',
     loadChildren: () => import('./home-template/home-template.module').then( m => m.HomeTemplatePageModule)
   },
+  {
+    path: 'gv-product-list',
+    loadChildren: () => import('./gv-product-list/gv-product-list.module').then( m => m.GvProductListPageModule)
+  },
+  {
+    path: 'gv-cart-edit',
+    loadChildren: () => import('./gv-cart-edit/gv-cart-edit.module').then( m => m.GvCartEditPageModule)
+  },
+  {
+    path: 'gv-cart-payment',
+    loadChildren: () => import('./gv-cart-payment/gv-cart-payment.module').then( m => m.GvCartPaymentPageModule)
+  },
+  {
+    path: 'gv-transition-info',
+    loadChildren: () => import('./gv-transition-info/gv-transition-info.module').then( m => m.GvTransitionInfoPageModule)
+  },
 
 
 ];

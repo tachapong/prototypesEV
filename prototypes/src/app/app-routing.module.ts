@@ -102,6 +102,38 @@ const routes: Routes = [
     path: 'ev-home-refund',
     loadChildren: () => import('./ev-home-refund/ev-home-refund.module').then( m => m.EvHomeRefundPageModule)
   },
+  {
+    path: 'ev-product-list',
+    loadChildren: () => import('./ev-product-list/ev-product-list.module').then( m => m.EvProductListPageModule)
+  },
+  {
+    path: 'ev-consent-product',
+    loadChildren: () => import('./ev-consent-product/ev-consent-product.module').then( m => m.EvConsentProductPageModule)
+  },
+  {
+    path: 'ev-home-comfirm-consent',
+    loadChildren: () => import('./ev-home-comfirm-consent/ev-home-comfirm-consent.module').then( m => m.EvHomeComfirmConsentPageModule)
+  },
+  {
+    path: 'ev-homefeed-detail',
+    loadChildren: () => import('./ev-homefeed-detail/ev-homefeed-detail.module').then( m => m.EvHomefeedDetailPageModule)
+  },
+  {
+    path: 'ev-transition-info',
+    loadChildren: () => import('./ev-transition-info/ev-transition-info.module').then( m => m.EvTransitionInfoPageModule)
+  },
+  {
+    path: 'home2',
+    loadChildren: () => import('./home2/home2.module').then( m => m.Home2PageModule)
+  },
+  {
+    path: 'ev-cart-payment',
+    loadChildren: () => import('./ev-cart-payment/ev-cart-payment.module').then( m => m.EvCartPaymentPageModule)
+  },
+  {
+    path: 'ev-cart-edit',
+    loadChildren: () => import('./ev-cart-edit/ev-cart-edit.module').then( m => m.EvCartEditPageModule)
+  },
 
 
 ];

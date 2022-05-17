@@ -1,36 +1,30 @@
 <ion-content mode="ios">
 
-  <ion-card color="tertiary">
-    <ion-item lines="full" color="tertiary">
+  <ion-list lines="none" class="ion-margin-top" lines="none">
+    <ion-item lines="none" color="tertiary">
       <ion-avatar slot="start">
         <img src="assets/imgs/defaultshop.png" />
       </ion-avatar>
       <ion-label>
         <h2><b>ชื่อร้านค้า&nbsp;<img src="assets/imgs/iconofficail.png"></b></h2>
-        <h3>ได้ทำการขออนุญาตเข้าถึงข้อมูล</h3>
+        <h3>ยืนยันการชำระเงินเข้าร้าน</h3>
       </ion-label>
     </ion-item>
-    
+  </ion-list>
+
+  <ion-list lines="none" class="ion-margin-top" lines="full">
     <ion-item color="tertiary" lines="none">
       <ion-label>
-        <h3><b>ขออนุญาตเข้าถึงข้อมูลดังต่อไปนี้</b></h3>
+        <h3><b>รายละเอียดเพิ่มเติม</b></h3>
         <ion-text>
           <h3>ชำระเงินชาร์ต EV 1 ชั่วโมง ราคา 200 บาท </h3>
         </ion-text>
-      </ion-label>
-    </ion-item>
-  </ion-card>
-
-  <ion-card class="ion-padding-top"> 
-    <ion-item color="tertiary" lines="none">
-      <ion-label>
-        <h3><b>วันที่ขออนุญาต</b></h3>
         <ion-text>
-          <h3>วันที่ 17/05/2565 16.43</h3>
+          <h3>วันที่ขออนุญาต 17/05/2565 </h3>
         </ion-text>
       </ion-label>
     </ion-item>
-  </ion-card>
+  </ion-list>
 
   <ion-card>
     <ion-card-content>
@@ -64,5 +58,6 @@
 
 </ion-content>
 <ion-footer>
-  <ion-button color="danger" class="ion-no-margin" expand="full" type="submit" routerLink="/ev-home-comfirm-consent">ยืนยัน</ion-button>
+  <ion-button color="danger" class="ion-no-margin" expand="full" type="submit" routerLink="/ev-home-comfirm-consent">
+    ยืนยัน</ion-button>
 </ion-footer>

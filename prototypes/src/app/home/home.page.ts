@@ -23,6 +23,7 @@ export class HomePage implements OnInit {
     new ListInfo("ขอความยินยอม (consent)"),
     new ListInfo("ข้อมูล (ผู้ใช้อนุมัติ)", "/consent-info-user-template", "", true),
     new ListInfo("ข้อมูล (ผู้ดูแลอนุมัติ)", "/consent-info-manager-template", "", true),
+    new ListInfo("สมัครสมาชิก *Conception", "/consent-register-template", "", true),
     new ListInfo("หน้าหลัก (home)", "/home-template", "scss, ts"),
   ];
 

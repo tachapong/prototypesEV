@@ -78,6 +78,10 @@ const routes: Routes = [
     path: 'condition-timer-template',
     loadChildren: () => import('./condition-timer-template/condition-timer-template.module').then( m => m.ConditionTimerTemplatePageModule)
   },
+  {
+    path: 'consent-register-template',
+    loadChildren: () => import('./consent-register-template/consent-register-template.module').then( m => m.ConsentRegisterTemplatePageModule)
+  },
 
 
 ];

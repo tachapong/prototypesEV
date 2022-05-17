@@ -90,6 +90,18 @@ const routes: Routes = [
     path: 'gv-transition-info',
     loadChildren: () => import('./gv-transition-info/gv-transition-info.module').then( m => m.GvTransitionInfoPageModule)
   },
+  {
+    path: 'ev-home-pay',
+    loadChildren: () => import('./ev-home-pay/ev-home-pay.module').then( m => m.EvHomePayPageModule)
+  },
+  {
+    path: 'homefeed-detail',
+    loadChildren: () => import('./homefeed-detail/homefeed-detail.module').then( m => m.HomefeedDetailPageModule)
+  },
+  {
+    path: 'ev-home-refund',
+    loadChildren: () => import('./ev-home-refund/ev-home-refund.module').then( m => m.EvHomeRefundPageModule)
+  },
 
 
 ];

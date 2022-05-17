@@ -1,0 +1,63 @@
+<ion-content mode="ios">
+
+  <ion-list lines="none" class="ion-margin-top" lines="none">
+    <ion-item lines="none" color="tertiary">
+      <ion-avatar slot="start">
+        <img src="assets/imgs/defaultshop.png" />
+      </ion-avatar>
+      <ion-label>
+        <h2><b>ชื่อร้านค้า&nbsp;<img src="assets/imgs/iconofficail.png"></b></h2>
+        <h3>ยืนยันการชำระเงินเข้าร้าน</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list lines="none" class="ion-margin-top" lines="full">
+    <ion-item color="tertiary" lines="none">
+      <ion-label>
+        <h3><b>รายละเอียดเพิ่มเติม</b></h3>
+        <ion-text>
+          <h3>ชำระเงินชาร์ต EV 1 ชั่วโมง ราคา 200 บาท </h3>
+        </ion-text>
+        <ion-text>
+          <h3>วันที่ขออนุญาต 17/05/2565 </h3>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-card>
+    <ion-card-content>
+      <div class="ion-no-margin">
+        <ion-card color="tertiary" class="ion-no-padding border-radius">
+          <ion-list class="ion-margin-bottom" lines="none">
+            <ion-list-header mode="md" color="tertiary">
+              <ion-label>
+                <h3>ยอมรับข้อตกลง</h3>
+              </ion-label>
+            </ion-list-header>
+            <ion-radio-group mode="md">
+              <ion-item color="tertiary">
+                <ion-label>
+                  <h3><b>อนุญาต</b></h3>
+                </ion-label>
+                <ion-radio slot="start" value="true"></ion-radio>
+              </ion-item>
+              <ion-item color="tertiary">
+                <ion-label>
+                  <h3><b>ปฏิเสธ</b></h3>
+                </ion-label>
+                <ion-radio slot="start" value="false"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
+        </ion-card>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+<ion-footer>
+  <ion-button color="danger" class="ion-no-margin" expand="full" type="submit" routerLink="/ev-home-comfirm-consent">
+    ยืนยัน</ion-button>
+</ion-footer>

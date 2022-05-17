@@ -18,6 +18,7 @@ export class HomePage implements OnInit {
     new ListInfo("ลิสต์รายการ", "/list-template"),
     new ListInfo("Option dialog", "/option-dialog-template"),
     new ListInfo("หน้าคั่น", "/condition-template", "scss"),
+    new ListInfo("หน้าคั่น (นับเวลาถอยหลัง)", "/condition-timer-template", "scss, ts", true),
     new ListInfo("ข้อตกลง (agreement)", "/agreement-template"),
     new ListInfo("ขอความยินยอม (consent)"),
     new ListInfo("ข้อมูล (ผู้ใช้อนุมัติ)", "/consent-info-user-template", "", true),

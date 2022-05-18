@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-ev-home-refund',
@@ -17,8 +18,21 @@ export class EvHomeRefundPage implements OnInit {
     freeMode: true
   };
   
-  constructor() { }
+  constructor(public alertController: AlertController) {
+    this.presentAlert();
+   }
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'EV Charger',
+      message: 'คืนเงินทอนจากบริการ EV Charger',
+      buttons: ['ปิด']
+    });
 
+    await alert.present();
+
+    const { role } = await alert.onDidDismiss();
+    console.log('onDidDismiss resolved with role', role);
+  }
   ngOnInit() {
   }
 

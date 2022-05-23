@@ -34,17 +34,14 @@ const routes: Routes = [
   {
     path: 'form-binding',
     loadChildren: () => import('./form-binding/form-binding.module').then( m => m.FormBindingPageModule)
-  },  {
+  },
+  {
     path: 'form-send-data',
     loadChildren: () => import('./form-send-data/form-send-data.module').then( m => m.FormSendDataPageModule)
   },
   {
     path: 'form-receive-data',
     loadChildren: () => import('./form-receive-data/form-receive-data.module').then( m => m.FormReceiveDataPageModule)
-  },
-  {
-    path: 'memory',
-    loadChildren: () => import('./memory/memory.module').then( m => m.MemoryPageModule)
   },
   {
     path: 'list-template',
@@ -89,6 +86,10 @@ const routes: Routes = [
   {
     path: 'form-confirm-dialog',
     loadChildren: () => import('./form-confirm-dialog/form-confirm-dialog.module').then( m => m.FormConfirmDialogPageModule)
+  },
+  {
+    path: 'form-service',
+    loadChildren: () => import('./form-service/form-service.module').then( m => m.FormServicePageModule)
   },
 
 

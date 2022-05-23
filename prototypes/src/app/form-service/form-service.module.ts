@@ -4,9 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MemoryPageRoutingModule } from './memory-routing.module';
+import { FormServicePageRoutingModule } from './form-service-routing.module';
 
-import { MemoryPage } from './memory.page';
+import { FormServicePage } from './form-service.page';
 
 @NgModule({
   imports: [
@@ -14,8 +14,8 @@ import { MemoryPage } from './memory.page';
     FormsModule,
     IonicModule,
     ReactiveFormsModule,
-    MemoryPageRoutingModule
+    FormServicePageRoutingModule
   ],
-  declarations: [MemoryPage]
+  declarations: [FormServicePage]
 })
-export class MemoryPageModule {}
+export class FormServicePageModule {}

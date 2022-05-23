@@ -15,6 +15,9 @@ export class HomePage implements OnInit {
     new ListInfo("ตระกร้าสินค้า (ผลลัพธ์จ่ายเงิน) dialog", "/cart-dialog-template"),
     new ListInfo("ฟอร์มข้อมูล", "/form-template"),
     new ListInfo("Input แบบอื่นๆ", "/form-input-template", "", true),
+    new ListInfo("Binding data", "/form-binding", "module, ts", true),
+    new ListInfo("รับ/ส่งข้อมูล ระหว่างหน้า", "/form-send-data", "module, ts", true),
+    new ListInfo("รับ/ส่งข้อมูล ผ่าน Service", "/form-service", "module, ts, service", true),
     new ListInfo("Confirm dialog", "/form-confirm-dialog", "module, ts", true),
     new ListInfo("ลิสต์รายการ", "/list-template"),
     new ListInfo("Option dialog", "/option-dialog-template"),
@@ -29,12 +32,6 @@ export class HomePage implements OnInit {
     new ListInfo("หน้าหลัก (home)", "/home-template", "scss, ts"),
   ];
 
-  public advances: ListInfo[] = [
-    new ListInfo("รับ/ส่งข้อมูล ภายในฟอร์มข้อมูล", "/form-binding", "module, ts"),
-    new ListInfo("รับ/ส่งข้อมูล ระหว่างหน้า", "/form-send-data", "module, ts"),
-    new ListInfo("รับ/ส่งข้อมูล ผ่าน Service", "/memory", "module, ts, service"),
-  ];
-
   constructor() { }
 
   ngOnInit() {
@@ -43,10 +40,6 @@ export class HomePage implements OnInit {
         title: "Template pages",
         data: this.templates
       },
-      {
-        title: "Advances tip",
-        data: this.advances
-      }
     ];
   }
 

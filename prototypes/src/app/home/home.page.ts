@@ -15,6 +15,7 @@ export class HomePage implements OnInit {
     new ListInfo("ตระกร้าสินค้า (ผลลัพธ์จ่ายเงิน) dialog", "/cart-dialog-template"),
     new ListInfo("ฟอร์มข้อมูล", "/form-template"),
     new ListInfo("Input แบบอื่นๆ", "/form-input-template", "", true),
+    new ListInfo("Confirm dialog", "/form-confirm-dialog", "module, ts", true),
     new ListInfo("ลิสต์รายการ", "/list-template"),
     new ListInfo("Option dialog", "/option-dialog-template"),
     new ListInfo("Binding data", "/option-dialog-binding", "module, ts", true),
@@ -24,7 +25,7 @@ export class HomePage implements OnInit {
     new ListInfo("ขอความยินยอม (consent)"),
     new ListInfo("ข้อมูล (ผู้ใช้อนุมัติ)", "/consent-info-user-template", "", true),
     new ListInfo("ข้อมูล (ผู้ดูแลอนุมัติ)", "/consent-info-manager-template", "", true),
-    new ListInfo("สมัครสมาชิก *Conception", "/consent-register-template", "", true),
+    new ListInfo("สมัครสมาชิก", "/consent-register-template", "", true),
     new ListInfo("หน้าหลัก (home)", "/home-template", "scss, ts"),
   ];
 

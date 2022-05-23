@@ -86,6 +86,10 @@ const routes: Routes = [
     path: 'option-dialog-binding',
     loadChildren: () => import('./option-dialog-binding/option-dialog-binding.module').then( m => m.OptionDialogBindingPageModule)
   },
+  {
+    path: 'form-confirm-dialog',
+    loadChildren: () => import('./form-confirm-dialog/form-confirm-dialog.module').then( m => m.FormConfirmDialogPageModule)
+  },
 
 
 ];

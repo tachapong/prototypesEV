@@ -90,6 +90,9 @@ const routes: Routes = [
   {
     path: 'form-service',
     loadChildren: () => import('./form-service/form-service.module').then( m => m.FormServicePageModule)
+  },  {
+    path: 'option-dialog-no-submit',
+    loadChildren: () => import('./option-dialog-no-submit/option-dialog-no-submit.module').then( m => m.OptionDialogNoSubmitPageModule)
   },
 
 

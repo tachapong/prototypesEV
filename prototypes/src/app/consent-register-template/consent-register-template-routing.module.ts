@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { MemoryPage } from './memory.page';
+import { ConsentRegisterTemplatePage } from './consent-register-template.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: MemoryPage
+    component: ConsentRegisterTemplatePage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class MemoryPageRoutingModule {}
+export class ConsentRegisterTemplatePageRoutingModule {}

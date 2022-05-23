@@ -4,17 +4,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FormTemplatePageRoutingModule } from './form-template-routing.module';
+import { FormServicePageRoutingModule } from './form-service-routing.module';
 
-import { FormTemplatePage } from './form-template.page';
+import { FormServicePage } from './form-service.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FormTemplatePageRoutingModule
+    ReactiveFormsModule,
+    FormServicePageRoutingModule
   ],
-  declarations: [FormTemplatePage]
+  declarations: [FormServicePage]
 })
-export class FormTemplatePageModule {}
+export class FormServicePageModule {}

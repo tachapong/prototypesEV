@@ -82,6 +82,10 @@ const routes: Routes = [
     path: 'consent-register-template',
     loadChildren: () => import('./consent-register-template/consent-register-template.module').then( m => m.ConsentRegisterTemplatePageModule)
   },
+  {
+    path: 'option-dialog-binding',
+    loadChildren: () => import('./option-dialog-binding/option-dialog-binding.module').then( m => m.OptionDialogBindingPageModule)
+  },
 
 
 ];

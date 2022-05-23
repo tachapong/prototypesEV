@@ -17,6 +17,7 @@ export class HomePage implements OnInit {
     new ListInfo("Input แบบอื่นๆ", "/form-input-template", "", true),
     new ListInfo("ลิสต์รายการ", "/list-template"),
     new ListInfo("Option dialog", "/option-dialog-template"),
+    new ListInfo("Binding data", "/option-dialog-binding", "module, ts", true),
     new ListInfo("หน้าคั่น", "/condition-template", "scss"),
     new ListInfo("หน้าคั่น (นับเวลาถอยหลัง)", "/condition-timer-template", "scss, ts", true),
     new ListInfo("ข้อตกลง (agreement)", "/agreement-template"),

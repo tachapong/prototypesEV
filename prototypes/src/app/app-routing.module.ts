@@ -154,6 +154,10 @@ const routes: Routes = [
     path: 'ev-cart-edit',
     loadChildren: () => import('./ev-cart-edit/ev-cart-edit.module').then( m => m.EvCartEditPageModule)
   },
+  {
+    path: 'ev-homefeed-refund-detail',
+    loadChildren: () => import('./ev-homefeed-refund-detail/ev-homefeed-refund-detail.module').then( m => m.EvHomefeedRefundDetailPageModule)
+  },
 
 
 ];
